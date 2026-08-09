@@ -1,0 +1,96 @@
+🗺️ The Full Roadmap
+Phase 1 — Setup (Done / Almost Done)
+
+✅ Install Python + PyCharm
+✅ Install pandas, requests, matplotlib, plotly
+✅ Get API key from football-data.org
+✅ Run first API call and see raw data printing
+
+
+Phase 2 — Data Fetching (Week 1)
+Getting raw data from the API and understanding its structure
+API → requests → raw JSON → print and explore
+
+Fetch all World Cup matches
+Fetch team info and group standings
+Understand what fields exist (goals, dates, team names, status)
+Save data to a CSV file so you don't have to call the API every time
+
+
+Phase 3 — Data Cleaning (Week 1-2)
+Turning messy raw JSON into usable tables
+raw JSON → pandas DataFrame → clean table
+
+Convert JSON to a DataFrame
+Handle missing values (some scores are null before a match is played)
+Filter by match status (FINISHED vs SCHEDULED)
+Create new columns like total_goals, winner, points
+
+
+Phase 4 — Analysis (Week 2-3)
+Actually answering interesting questions with the data
+Things you'll calculate:
+
+Group standings (points, goal difference, goals scored)
+Top scorers
+Which teams score the most? Concede the most?
+Average goals per match
+Home vs away performance
+
+All of this is just pandas — filtering, grouping, sorting
+
+Phase 5 — Visualization (Week 3)
+Turning your analysis into charts
+pandas DataFrame → matplotlib/plotly → charts
+Charts you'll make:
+
+Bar chart of goals per team
+Group standings table
+Heatmap of match results
+Line chart of goals over time as tournament progresses
+
+
+Phase 6 — Prediction Model (Week 4)
+The stats part — using a Poisson model to predict scores
+What is Poisson? It's a simple statistical model that says:
+
+"If Brazil scores 2.1 goals per game on average, what's the probability they score 0, 1, 2, 3... goals in their next match?"
+
+team stats (pandas) → Poisson model (scipy) → score probabilities
+Steps:
+
+Calculate each team's average goals scored and conceded
+Use scipy.stats.poisson to generate score probabilities
+Predict most likely scoreline for upcoming matches
+Compare predictions vs actual results
+
+
+Phase 7 — Streamlit App (Week 5+)
+Turning everything into a real interactive website
+your Python code → Streamlit → web app anyone can use
+
+Install Streamlit (pip install streamlit)
+Build a simple dashboard with dropdowns and charts
+Run it locally, then optionally deploy it free on streamlit.io
+Share the link with friends
+
+
+
+www.football-data.org/documentation/quickstart#available-resources
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

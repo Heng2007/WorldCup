@@ -1,0 +1,5 @@
+# Requires Python 3.11+ (numpy <2.1 emits spurious matmul warnings on macOS/Accelerate)
+pandas==2.3.3
+scikit-learn==1.9.0
+requests==2.32.5
+python-dotenv==1.2.1
