@@ -1,8 +1,8 @@
 # World Cup Match Predictor
 
 Predicts the outcome of an international football match — **Win / Draw / Loss** from the
-home team's perspective — using a logistic regression model trained on historical
-international results, blended with current-cycle form pulled from the
+home team's perspective — using a logistic regression model trained based on historical
+international results, also bleanded with fresh data pulled from the
 [football-data.org](https://www.football-data.org) API.
 
 World Cup is too fun to watch, I am not satisfy with just watch the games. Therefore, I propose a project to have more fun during the World Cup.   
