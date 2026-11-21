@@ -43,15 +43,17 @@ training data.
 
 ## Results
 
-                precision    recall  f1-score   support
+Filed evaluation (2026-09-07) on a 9,904-match test set:
 
-        Draw       0.35      0.43      0.38      2254
-        Loss       0.57      0.56      0.56      2822
-         Win       0.78      0.71      0.74      4828
+| Class | F1-score | Support |
+| --- | --- | --- |
+| Win | 0.57 | 4,828 |
+| Loss | 0.48 | 2,822 |
+| Draw | 0.30 | 2,254 |
 
-    accuracy                           0.60      9904
-   macro avg       0.57      0.56      0.56      9904
-weighted avg       0.62      0.60      0.61      9904
+- Accuracy: 0.47
+- Macro F1: 0.45
+- Weighted F1: 0.48
 
 ## Known limitations
 
